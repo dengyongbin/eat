@@ -5,10 +5,13 @@ body {
 #main {
     margin: 50px auto;
 }
-#person {
+#person, #select {
     background-color: #ffffff;
     padding-top: 20px;
     opacity: 0.9;
+}
+#select {
+    margin-bottom: 20px;
 }
 #dynamic {
     padding-left: 0;
@@ -21,6 +24,13 @@ body {
     height: 100px;
     border-radius: 0;
     object-fit: cover;
+}
+.thumbnail img:hover {
+    transform: scale(1.1, 1.1);
+    -ms-transform:scale(1.1, 1.1);
+    -moz-transform:scale(1.1, 1.1);
+    -webkit-transform:scale(1.1, 1.1);
+    -o-transform:scale(1.1, 1.1);;
 }
 .btn-primary {
     position: absolute;
