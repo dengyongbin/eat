@@ -1,5 +1,5 @@
 body {
-    background: url("bg.jpg");
+    background: url("eat-0406.jpg");
     background-size: cover;
 }
 #main {
@@ -11,7 +11,7 @@ body {
     opacity: 0.9;
 }
 #select {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 #dynamic {
     padding-left: 0;
@@ -24,13 +24,10 @@ body {
     height: 100px;
     border-radius: 0;
     object-fit: cover;
+    transition: all .7s ease;
 }
 .thumbnail img:hover {
-    transform: scale(1.1, 1.1);
-    -ms-transform:scale(1.1, 1.1);
-    -moz-transform:scale(1.1, 1.1);
-    -webkit-transform:scale(1.1, 1.1);
-    -o-transform:scale(1.1, 1.1);;
+    transform: scale(1.1);
 }
 .btn-primary {
     position: absolute;
@@ -48,6 +45,7 @@ body {
     height: 160px;
     padding: 0;
     border: none;
+    overflow: hidden;
 }
 h5 {
     color: #424242;
