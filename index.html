@@ -34,13 +34,6 @@
                     </div>
                     <div class="col-md-2">
                         <div class="thumbnail">
-                            <img src="https://striker.teambition.net/thumbnail/110hd52fb0aea1599837d959954a8643bd1c/w/200/h/200" class="img-rounded">
-                            <h5>许文杰</h5>
-                            <button class="btn btn-primary" id="xuwenjie">报名</button>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="thumbnail">
                             <img src="https://striker.teambition.net/thumbnail/110n59d6974c30179f4814214fa9cc6e05f4/w/200/h/200" class="img-rounded">
                             <h5>郜宇</h5>
                             <button class="btn btn-primary" id="gaoyu">报名</button>
@@ -86,13 +79,6 @@
                             <img src="https://striker.teambition.net/thumbnail/110mce5324b111669530807c8861492b2f53/w/200/h/200" class="img-rounded">
                             <h5>李嘉帅</h5>
                             <button class="btn btn-primary" id="lijiashuai">报名</button>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="thumbnail">
-                            <img src="https://dn-st.qbox.me/user_default_avatars/17.png" class="img-rounded">
-                            <h5>陈红军</h5>
-                            <button class="btn btn-primary" id="chenhongjun">报名</button>
                         </div>
                     </div>
                     <div class="col-md-2">
@@ -194,10 +180,25 @@
         ref.child(dateChild).once("value").then(function (snapshot) {
             if (!snapshot.exists()) {
                 ref.child(dateChild).set({
-                    "dengyongbin":false,"kexian":false,"mashiyu":false,"lijiashuai":false,"chenhongjun":false,
-                    "hanshuai":false,"sunxuan":false,"xuwenjie":false,"gaoyu":false,"guozhiqiang":false,
-                    "liuwei":false,"yangyu":false,"wanggang":false,"luyezhang":false,"liuzizhang":false,
-                    "dengjiebin":false, "huxiaojing":false,"zhengxiaoqing":false,"ruanyundong":false,"fanyikang":false,"zhangxiaojia":false
+                    "dengyongbin":false,
+                    "kexian":false,
+                    "mashiyu":false,
+                    "lijiashuai":false,
+                    "hanshuai":false,
+                    "sunxuan":false,
+                    "gaoyu":false,
+                    "guozhiqiang":false,
+                    "liuwei":false,
+                    "yangyu":false,
+                    "wanggang":false,
+                    "luyezhang":false,
+                    "liuzizhang":false,
+                    "dengjiebin":false,
+                    "huxiaojing":false,
+                    "zhengxiaoqing":false,
+                    "ruanyundong":false,
+                    "fanyikang":false,
+                    "zhangxiaojia":false
                 });
             }
         });
